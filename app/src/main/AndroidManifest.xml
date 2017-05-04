@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ashut.miwok">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconmiwok"
+        android:roundIcon="@drawable/iconmiwok"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NumbersActivity"
+            android:label="Numbers"
+            android:parentActivityName="com.example.ashut.miwok.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ashut.miwok.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FamilyMembersActivity"
+            android:label="Family Members"
+            android:parentActivityName="com.example.ashut.miwok.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ashut.miwok.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ColorsActivity"
+            android:label="Colors"
+            android:parentActivityName="com.example.ashut.miwok.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ashut.miwok.MainActivity" />
+        </activity>
+        <activity
+            android:name=".PhrasesActivity"
+            android:label="Phrases"
+            android:parentActivityName="com.example.ashut.miwok.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ashut.miwok.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
